@@ -72,7 +72,7 @@ button {
 }
 
 button:hover {
-    background-color: #4b004b;
+    background-color: white;
 }
 
 footer {
@@ -80,18 +80,16 @@ footer {
     color: black;
     padding: 20px;
     text-align: center;
-    bottom: relative;
+    
     
 
 }
 #active
 {
     text-decoration: none;
-    padding: 0px;
-    background-color: #800080;
+    padding: 1px;
     display: inline;
-    border:2px yellow ;
-    border-radius: 20px;
+    border:1px yellow ;
 }
 a:hover{
     color: white;
