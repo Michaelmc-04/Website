@@ -9,37 +9,34 @@
     <meta name="keywords" content="tractors, farming, agriculture, equipment, machinery">
     <link rel="stylesheet" href="stylish/styles.css">
     <style>
-        /* Additional styles for the product page */
+        
         .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 20px;
-        }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
 
-        .product {
-            flex: 0 0 calc(33.33% - 20px); /* Three products per row with margin */
-            margin: 10px;
-            overflow: hidden;
-            border: 2px solid #800080;
-            border-radius: 10px;
-            transition: transform 0.3s ease-in-out;
-            cursor: pointer;
-        }
+.product {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid orange;
+}
 
-        .product:hover {
-            transform: scale(1.05);
-        }
+.product:hover {
+  transform: scale(1.05);
+}
 
-        .product img {
-            width: 100%;
-            height: auto;
-            border-bottom: 2px solid #800080;
-        }
+.product img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
+}
 
-        .product-info {
-            padding: 10px;
-        }
+.product-info {
+  padding: 10px;
+}
+
     </style>
     <title>RuralRides - Products</title>
 </head>
@@ -50,11 +47,11 @@
         <div class="logo">
             <img style="float:left; margin:10px; border: 2px solid black; " src="Pictures/logo.jpg"  alt="Logo">
         </div>
-        <div class="title">
+        <div>
             <h1>Welcome to Tractor Sales</h1>
         </div>
         <div class="basket" >
-            <img style="float:right; margin:10px; border: 2px solid black; " src="Pictures/basket.png"  alt="basket icon" height="30px">
+            <img  src="Pictures/basket.png"  alt="basket icon" height="30px">
             <span class="basket-count">0</span>
         </div>
     </header>
@@ -68,62 +65,73 @@
     </nav>
 
     <section id="products">
-        <h2>Featured Tractors</h2>
+        <h2>Our Tractors</h2>
+        
         <section class="product-container">
-            
-            <div class="product" onclick="window.location.href='product1.html';">
-                <img src="Pictures/new holland.jpg" alt="Tractor Model 1">
-                <div class="product-info">
-                    <h3>Tractor Model 1</h3>
-                    <p></p>
-                    <p>Price: </p>
-                </div>
-            </section>
-
            
-            <div class="product" onclick="window.location.href='product2.html';">
-                <img src="Pictures/tractor2.jpg" alt="Tractor Model 2">
-                <div class="product-info">
-                    <h3>Tractor Model 2</h3>
-                    <p>tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
-                    <p>Price: </p>
-                </div>
+            <div class="product" ;>
+                <a href='product1.html'>  
+                 <img src="Pictures/new holland.jpg" alt="Tractor Model 1"height="2000px" width="200px">
+                 </a>
+                
+                    <h3>New Holland 8160</h3>
+                    
+                    <p>Price: £12500</p>
+                
             </div>
-            <div class="product" onclick="window.location.href='product3.html';">
-                <img src="Pictures/tractor2.jpg" alt="Tractor Model 2">
-                <div class="product-info">
-                    <h3>Tractor Model 2</h3>
-                    <p>tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
-                    <p>Price: </p>
-                </div>
+            <div class="product" ;>
+                <a href='product2.html'>   
+                    <img src="Pictures/case.jpg" alt="Tractor Model 1"height="200px" width="200px">
+                 </a>
+                
+                    <h3>Case International 885XL</h3>
+                    
+                    <p>Price: £9935</p>
+                
             </div>
-            <div class="product" onclick="window.location.href='product4.html';">
-                <img src="Pictures/tractor2.jpg" alt="Tractor Model 2">
-                <div class="product-info">
-                    <h3>Tractor Model 2</h3>
-                    <p>tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
-                    <p>Price: </p>
-                </div>
+            <div class="product" ;>
+                <a href='product3.html'>  
+                 <img src="Pictures/Fiat.jpg" alt="Tractor Model 1"height="200px" width="200px">
+                 </a>
+                
+                    <h3> FIAT F115</h3>
+                    
+                    <p>Price:£15000  </p>
+               
             </div>
-            <div class="product" onclick="window.location.href='product5.html';">
-                <img src="Pictures/tractor2.jpg" alt="Tractor Model 2">
-                <div class="product-info">
-                    <h3>Tractor Model 2</h3>
-                    <p>tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
-                    <p>Price:</p>
-                </div>
+            <div class="product" ;>
+                <a href='product4.html'>  
+                 <img src="Pictures/massey.jpg" alt="Tractor Model 1"height="200px" width="200px">
+                 </a>
+                
+                    <h3>Massey Ferguson 185</h3>
+                    
+                    <p>Price: £9000</p>
+               
             </div>
-            <div class="product" onclick="window.location.href='product6.html';">
-                <img src="Pictures/tractor2.jpg" alt="Tractor Model 2">
-                <div class="product-info">
-                    <h3>Tractor Model 2</h3>
-                    <p>tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
-                    <p>Price:</p>
-                </div>
+            <div class="product" ;>
+                <a href='product5.html'>  
+                 <img src="Pictures/john.webp" alt="Tractor Model 1"height="200px" width="200px">
+                 </a>
+                
+                    <h3>2023 JOHN DEERE 6R 155</h3>
+                    
+                    <p>Price:£121000</p>
+               
             </div>
-            <!-- Add more products as needed -->
-            
+            <div class="product" ;>
+               <a href='product6.html'>  
+                <img src="Pictures/deutz.png" alt="Tractor Model 1" height="200px" width="200px">
+                </a>
+                
+                    <h3>Deutz-Fahr 6155</h3>
+                    
+                    <p>Price:£120000 </p>
+              
+                
+          </section>  
         </div>
+            
     </section>
 
     <footer>

@@ -1,31 +1,28 @@
-/* Add this CSS to a file named styles.css and link it in your HTML file */
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:lightgoldenrodyellow;
+    background-color:rgb(94, 128, 94);
     color: black;
 }
 
 header {
-    background-color: #800080;
+    background-color: rgb(94, 128, 94);
     color: black;
     padding: 20px;
-    text-align: left;
-    display: flex;
     align-items: center;
     height: 50px; 
 }
 
 .logo img {
-    max-height: 50px; /* Adjust the height of your logo as needed */
-    margin-right: 20px; /* Add space between logo and title */
+    max-height: 50px; 
+    margin-right: 20px; 
 }
 
 nav {
     text-align: center;
-    background-color: grey;
+    background-color:orange;
     height: 65px;
 }
 
@@ -48,7 +45,7 @@ nav a {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 40px;
-    background-color:purple;
+    background-color:orange;
     margin-left: 5px;
     margin-right: 5px;
     
@@ -61,12 +58,13 @@ section {
 .product {
     margin-bottom: 20px;
     padding: 15px;
-    background-color: lightgrey;
+    background-color: white;
     color: black;
 }
 
+
 button {
-    background-color: blue;
+    background-color:rgb(94, 128, 94);
     color: black;
     padding: 8px;
     border: none;
@@ -78,45 +76,30 @@ button:hover {
 }
 
 footer {
-    background-color: #800080;
+    background-color: orange;
     color: black;
     padding: 20px;
     text-align: center;
+    bottom: relative;
+    
+
 }
 #active
 {
     text-decoration: none;
     padding: 0px;
-    margin-left: 5px;
-    margin-right: 5px;
     background-color: #800080;
     display: inline;
     border:2px yellow ;
     border-radius: 20px;
 }
 a:hover{
-    color: grey;
+    color: white;
 }
 .pic:hover {
     transform: scale(1.05);
 }
 
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    
-}
-
-header {
-    background-color: #800080;
-    
-    padding: 20px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-}
 
 .logo img {
     max-height: 50px;
@@ -135,11 +118,92 @@ header {
 .google-maps {
     margin-top: 20px;
     width: 100%;
-    height:100vh;
+    height:300px;
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+.basket{
+    float:right; margin:10px;; 
+}
+#photo-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 20px 0;
+    background-color: #fff;
+}
 
+#photo-container img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#video-container {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#description-section {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#reviews-section {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ .review {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+p{
+    text-decoration: none;
+}
+label {
+    float: left;
+    width: 112px;
+    padding-right: 10px;
+    text-align: right;
+  }
+  input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 220px;
+  }
+  #button, #reset {
+    margin-top: .5em;
+    width: 8em;
+    background-color:orange;
+    border: 2px solid black;
+  }
+  input[type="checkbox"] {width: 15px;}
+   
+  #button
+  {
+    margin-left: 138px;
+  }
+   
+  #reset
+  {
+    margin-left: 82px;}
+    input[type="radio"] {width: 10px;
+  }
+  
 

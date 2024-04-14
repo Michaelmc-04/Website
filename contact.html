@@ -12,17 +12,18 @@
    
 </head>
 
+
 <body>
 
     <header>
         <div class="logo">
             <img style="float:left; margin:10px; border: 2px solid black; " src="Pictures/logo.jpg" alt="Logo">
         </div>
-        <div class="title">
+        <div >
             <h1>Welcome to Tractor Sales</h1>
         </div>
         <div class="basket">
-            <img style="float:right; margin:10px; border: 2px solid black; " src="Pictures/basket.png" alt="basket icon"
+            <img src="Pictures/basket.png" alt="basket icon"
                 height="30px">
             <span class="basket-count">0</span>
         </div>
@@ -36,30 +37,40 @@
         </ul>
     </nav>
 
-  <label for="gender">Gender :</label>
-  <input type="radio" id="gender" name="gender" value="male">Male
-  <input type="radio" id="gender" name="gender" value="female">Female
-  <input type="radio" id="gender" name="gender" value="other">other
+    <form action="http://foo.com/" method="get">
+        <br>
+        <label for="first_name">First name: <span class="required">*</span></label>
+        <input type="text" name="first_name" id="first_name" autofocus required><br> <label for="last_name">Last name: <span class="required">*</span></label>
+        <input type="text" name="last_name" id="last_name" required><br> <label for="email">Email:<span class="required">*</span></label>
+        <input type="email" name="email" id="email" required placeholder="sales@tractorsales.com"> <br>
+            <br>
+     
+        <label for="gender_male">Gender:</label>
+        <input type="radio" id="gender_male" name="gender" value="male"> Male
+        <input type="radio" id="gender_female" name="gender" value="female"> Female
+        <input type="radio" id="gender_other" name="gender" value="other" checked> Other
+            <br>
+       
+        <label for="message">Where did you hear about us:</label>
+        <fieldset style="max-width: 500px;">
+        <input type="checkbox" id="internet" name="internet" value="internet" checked> Internet <br>
+        <input type="checkbox" class="marginl" id="hearr" name="paper" value="paper"> Newspaper <br>
+        <input type="checkbox" class="marginl" id="friend" name="friend" value="friend"> Friend <br>
+        <input type="checkbox" class="marginl" id="qoute" name="qoute" value="qoute"> Request a new qoute <br>
+        <input type="checkbox" class="marginl" id="add" name="add" value="add"> Others <br>
+        </fieldset>
+        <br>
+     
+        <label for="message">Query:</label>
+        <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength=""></textarea>
+        <br>
+        <input type="submit" name="submit" id="button" value="Submit">
+        <input type="reset" name="reset" id="reset">
+     
+    </form>
 
-<fieldset>
-    <input type="chexkbox" id="gender" name="internet" value="internet" checked> Internet <br>
-    <input type="checkbox" class="marginal" id="hearr" name="paper" value="paper"> Newspaper<br>
-    <input type="checkbox" class="marginal" id="hearr" name="paper" value="paper"> Newspaper<br>
-    <input type="checkbox" class="marginal" id="hear" name="Add" value="Add"> Others<br>
-</fieldset>
-
-
-
-
-
-
-
-
-
-
-
-        <div class="google-maps">
-           <h1>Embed Location map</h1>
+        <div class = "google-maps">
+           <h1>Our Home Base Location</h1>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18637.41777106186!2d-8.476510149453423!3d54.27428744671653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee84e43477737%3A0x59330491b667bdc9!2sThe%20Brewery%20Bar!5e0!3m2!1sen!2sie!4v1710077899799!5m2!1sen!2sie"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
